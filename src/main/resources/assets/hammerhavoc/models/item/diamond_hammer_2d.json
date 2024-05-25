@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "hammerhavoc:item/diamond_hammer_2d"
+  }
+}

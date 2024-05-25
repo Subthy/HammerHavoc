@@ -1,0 +1,29 @@
+[21May2024 17:11:27.421] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\krist\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.30, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, hammerhavoc, --all, --output, C:\Users\krist\Desktop\HammerHavoc\src\generated\resources, --existing, C:\Users\krist\Desktop\HammerHavoc\src\main\resources]
+[21May2024 17:11:27.424] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[21May2024 17:11:27.518] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[21May2024 17:11:27.558] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/krist/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[21May2024 17:11:27.771] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\krist\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.30\306080746b55301f533d17a1f75c0416bfa6425d\javafmllanguage-1.20.1-47.2.30.jar is missing mods.toml file
+[21May2024 17:11:27.773] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\krist\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.30\ed4251688f57da24ffceb91f85693e28171bc4de\lowcodelanguage-1.20.1-47.2.30.jar is missing mods.toml file
+[21May2024 17:11:27.775] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\krist\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.30\66fae321e7c1e488bb0a63661153f415efa06665\mclanguage-1.20.1-47.2.30.jar is missing mods.toml file
+[21May2024 17:11:27.778] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\krist\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.30\34b7d69dcc2b769d597be488ba457877f9d57cd9\fmlcore-1.20.1-47.2.30.jar is missing mods.toml file
+[21May2024 17:11:27.836] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[21May2024 17:11:28.747] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\krist\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, hammerhavoc, --all, --output, C:\Users\krist\Desktop\HammerHavoc\src\generated\resources, --existing, C:\Users\krist\Desktop\HammerHavoc\src\main\resources]
+[21May2024 17:11:29.035] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [hammerhavoc]
+[21May2024 17:11:32.033] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.30, for MC 1.20.1 with MCP 20230612.114412
+[21May2024 17:11:32.036] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.30 Initialized
+[21May2024 17:11:32.345] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/krist/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.30_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.30_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[21May2024 17:11:32.346] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/krist/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.30_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.2.30_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[21May2024 17:11:32.475] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
+[21May2024 17:11:32.656] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 181 ms
+[21May2024 17:11:32.656] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[21May2024 17:11:32.686] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 28 ms
+[21May2024 17:11:32.686] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[21May2024 17:11:32.692] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 7 ms
+[21May2024 17:11:32.693] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Tags
+[21May2024 17:11:32.701] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Tags finished after 8 ms
+[21May2024 17:11:32.701] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: hammerhavoc
+[21May2024 17:11:32.707] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: hammerhavoc finished after 6 ms
+[21May2024 17:11:32.708] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: hammerhavoc
+[21May2024 17:11:32.708] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: hammerhavoc finished after 0 ms
+[21May2024 17:11:32.708] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 233 ms
+[21May2024 17:11:32.716] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 21, old count: 19, new count: 20, removed stale: 2, written: 2

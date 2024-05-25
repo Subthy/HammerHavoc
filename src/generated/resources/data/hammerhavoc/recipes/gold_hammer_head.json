@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "hammerhavoc:iron_hammer_head"
+    },
+    "C": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CAC"
+  ],
+  "result": {
+    "item": "hammerhavoc:gold_hammer_head"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "  C",
+    " A ",
+    "C  "
+  ],
+  "result": {
+    "item": "hammerhavoc:hammer_handle"
+  },
+  "show_notification": true
+}

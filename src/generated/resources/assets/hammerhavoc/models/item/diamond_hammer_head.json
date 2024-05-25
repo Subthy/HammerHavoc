@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hammerhavoc:item/diamond_hammer_head"
+  }
+}
