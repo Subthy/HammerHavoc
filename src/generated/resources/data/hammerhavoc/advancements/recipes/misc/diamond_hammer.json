@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_netherite_ingot": {
+    "has_diamond_hammer_head": {
       "conditions": {
         "items": [
           {
-            "tag": "forge:ingots/netherite"
+            "items": [
+              "hammerhavoc:diamond_hammer_head"
+            ]
           }
         ]
       },
@@ -13,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:0x1c4053aa"
+        "recipe": "hammerhavoc:diamond_hammer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_netherite_ingot",
+      "has_diamond_hammer_head",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:0x1c4053aa"
+      "hammerhavoc:diamond_hammer"
     ]
   },
   "sends_telemetry_event": false

@@ -1,5 +1,6 @@
 package net.subthy.hammerhavoc.item;
 
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -28,16 +29,24 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> Iron_Hammer = ITEMS.register("iron_hammer",
-            () -> new HammerItem(ModToolTiers.IRON_HAMMER, 1,  -2.8f, new Item.Properties().durability(251)));
+            () -> new HammerItem(ModToolTiers.IRON_HAMMER, 1,  -3.2f, new Item.Properties().durability(251)));
 
     public static final RegistryObject<Item> Gold_Hammer = ITEMS.register("gold_hammer",
-            () -> new HammerItem(ModToolTiers.GOLD_HAMMER, -1f,  -2.8f, new Item.Properties().durability(32)));
+            () -> new HammerItem(ModToolTiers.GOLD_HAMMER, -1f,  -3.2f, new Item.Properties().durability(32)));
 
     public static final RegistryObject<Item> Diamond_Hammer = ITEMS.register("diamond_hammer",
-            () -> new HammerItem(ModToolTiers.DIAMOND_HAMMER, 1,  -2.8f, new Item.Properties().durability(1561)));
+            () -> new HammerItem(ModToolTiers.DIAMOND_HAMMER, 1,  -3.2f, new Item.Properties().durability(1561)));
 
     public static final RegistryObject<Item> Netherite_Hammer = ITEMS.register("netherite_hammer",
             () -> new HammerItem(ModToolTiers.NETHERITE_HAMMER, 1,  -3.2f, new Item.Properties().durability(2031)));
+
+    // Testing
+
+
+
+
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

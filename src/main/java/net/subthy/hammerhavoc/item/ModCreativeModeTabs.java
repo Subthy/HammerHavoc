@@ -26,7 +26,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.Iron_Hammer_Head.get());
                         output.accept(ModItems.Gold_Hammer_Head.get());
                         output.accept(ModItems.Diamond_Hammer_Head.get());
-                        output.accept(ModItems.Netherite_Hammer_Head.get());
 
                     }).build());
 

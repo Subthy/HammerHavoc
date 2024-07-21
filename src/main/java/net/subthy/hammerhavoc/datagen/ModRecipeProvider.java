@@ -79,6 +79,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         of(Items.DIAMOND).build()))
                 .save(pWriter);
 
+// Hammer Recipe
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Iron_Hammer.get())
+                .pattern("AB ")
+                .define('A', ModItems.Iron_Hammer_Head.get())
+                .define('B', ModItems.Hammer_Handle.get())
+                .unlockedBy("has_iron_hammer_head", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.Iron_Hammer_Head.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Gold_Hammer.get())
+                .pattern("AB ")
+                .define('A', ModItems.Gold_Hammer_Head.get())
+                .define('B', ModItems.Hammer_Handle.get())
+                .unlockedBy("has_gold_hammer_head", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.Gold_Hammer_Head.get()).build()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.Diamond_Hammer.get())
+                .pattern("AB ")
+                .define('A', ModItems.Diamond_Hammer_Head.get())
+                .define('B', ModItems.Hammer_Handle.get())
+                .unlockedBy("has_diamond_hammer_head", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(ModItems.Diamond_Hammer_Head.get()).build()))
+                .save(pWriter);
+
 
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.of(ModItems.Diamond_Hammer.get()), Ingredient.of(Items.NETHERITE_INGOT),

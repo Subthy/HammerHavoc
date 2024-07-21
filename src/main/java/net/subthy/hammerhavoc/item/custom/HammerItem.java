@@ -1,5 +1,7 @@
 package net.subthy.hammerhavoc.item.custom;
 
+import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Multimap;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
@@ -9,12 +11,12 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.DiggerItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.Vanishable;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -25,15 +27,38 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import net.minecraftforge.common.ForgeMod;
+
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
+
 
 public class HammerItem extends DiggerItem implements Vanishable {
+
+    private final ImmutableMultimap<Attribute, AttributeModifier> defaultAttributes;
+    private final static UUID ATTACK_REACH = UUID.randomUUID();
+
     public HammerItem(Tier pTier, float pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pAttackDamageModifier, pAttackSpeedModifier, pTier, BlockTags.MINEABLE_WITH_PICKAXE, pProperties);
+        ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+        builder.put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(ATTACK_REACH, "attack_reach", 0d, AttributeModifier.Operation.ADDITION));
+        defaultAttributes = builder.build();
     }
 
+    @Override
+    public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot pEquipmentSlot) {
+        if (pEquipmentSlot != EquipmentSlot.MAINHAND) {
+            return super.getDefaultAttributeModifiers(pEquipmentSlot);
+        }
+
+        Multimap<Attribute, AttributeModifier> existingAttributes = super.getDefaultAttributeModifiers(pEquipmentSlot);
+        ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+        builder.putAll(existingAttributes);
+        builder.putAll(defaultAttributes);
+        return builder.build();
+    }
     @Override
     public boolean canDisableShield(ItemStack stack, ItemStack shield, LivingEntity entity, LivingEntity attacker) {
         return super.canDisableShield(stack, shield, entity, attacker);
@@ -143,10 +168,6 @@ public class HammerItem extends DiggerItem implements Vanishable {
                 }
             }
         }
-
-
-
-
         return positions;
     }
 }

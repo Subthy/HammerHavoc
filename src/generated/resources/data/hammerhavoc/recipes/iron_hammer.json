@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "hammerhavoc:iron_hammer_head"
+    },
+    "B": {
+      "item": "hammerhavoc:hammer_handle"
+    }
+  },
+  "pattern": [
+    "AB "
+  ],
+  "result": {
+    "item": "hammerhavoc:iron_hammer"
+  },
+  "show_notification": true
+}
