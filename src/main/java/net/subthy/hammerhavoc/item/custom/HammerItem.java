@@ -61,7 +61,7 @@ public class HammerItem extends DiggerItem implements Vanishable {
     }
     @Override
     public boolean canDisableShield(ItemStack stack, ItemStack shield, LivingEntity entity, LivingEntity attacker) {
-        return super.canDisableShield(stack, shield, entity, attacker);
+        return true;
     }
 
     @Override
